@@ -1,0 +1,33 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.nav-item.active {
+  color: #007bff;
+}
+
+.nav-item i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover i {
+  color: #0056b3;
+}

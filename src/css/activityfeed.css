@@ -1,0 +1,82 @@
+.activity-feed {
+  padding: 20px;
+}
+
+.bulk-action-btn {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.date-header {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.call-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.call-card.missed-call {
+  border-left: 4px solid red;
+}
+
+.call-info {
+  display: flex;
+  align-items: center;
+}
+
+.call-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.call-icon.inbound {
+  color: green;
+}
+
+.call-icon.outbound {
+  color: blue;
+}
+
+.call-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-details strong {
+  font-size: 14px;
+  color: #333;
+}
+
+.call-time {
+  font-size: 12px;
+  color: #666;
+}
+
+.call-button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.call-button.archive {
+  background-color: #007bff;
+}
+
+.call-button.unarchive {
+  background-color: #ff4757;
+}

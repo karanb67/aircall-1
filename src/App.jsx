@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Header from './Header.jsx';
+import React, { useState } from 'react';
+import Header from './components/Header.jsx';
+import Tabs from './components/Tabs.jsx';
+import ActivityFeed from './components/ActivityFeed.jsx';
+import BottomNav from './components/BottomNav.jsx';
+import './css/app.css';
 
 const App = () => {
+  const [activeTab, setActiveTab] = useState('inbox');
+
   return (
-    <div className='container'>
-      <Header/>
-      <div className="container-view">Some activities should be here</div>
+    <div className="app">
+      <Header />
+      <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
+      <ActivityFeed activeTab={activeTab} />
+      <BottomNav />
     </div>
   );
 };
-
-ReactDOM.render(<App/>, document.getElementById('app'));
 
 export default App;
